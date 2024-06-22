@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"href="css/formulario.css">
+    <title>Document</title>
+</head>
+<body class="conteiner_geral">
+
+    <legend><h1>Realize seu pedido de <h4>oração</h4> </h1></legend>
+
+
+
+    <Form class="geral">
+
+
+        <HR></HR>
+
+        <fieldset class="conteiner1" >
+               
+            <fieldset class="it1">
+                <h2>solicitante</h2>
+                <H3>
+                    
+                    <label for="nome"> nome: </label>
+                    <input type="text" id="nome" required="" for="nome" placeholder="Nome">
+                    
+                </H3>
+            </fieldset>
+            <fieldset class="it2">
+                <h2>destinatário</h2>
+
+                <H3>
+                    <label for="nome2"> nome: </label>
+                    <input type="text" id="nome" required="" for="nome" placeholder="Nome">
+                    
+                </H3>
+            </fieldset>
+        </fieldset>
+               
+        <fieldset class="conteiner2">
+
+            <h2>aréa da solicitação</h2>
+
+            <select name="Areas" id="areas">
+                
+                <optgroup>
+
+                    
+
+                        <option value="familia">FAMILIA</option>
+
+                        <option value="trabalho">trabalho</option>
+
+                        <option value="doença">doença</option>
+
+                        <option value="financeira">financeira</option>
+
+                        <option value="espiritual">espiritual</option>
+
+                        <option value="outro">outro</option>
+
+                    
+                </optgroup>
+                
+            </select>
+
+            <div class="comentario">
+            
+                <H3>  descreva sua solicitação de oração</H3>
+
+                <label class="solicitacao">
+                    
+                    <textarea  name="comente" id="comente" cols="40" rows="8"></textarea>
+
+                </label>
+            
+            </div>
+
+        </fieldset>
+
+        <button type="submit" id="concluir"> 
+            <a href="index.html">concluir</a>
+        </button> 
+    </Form>
+</body>
+</html>

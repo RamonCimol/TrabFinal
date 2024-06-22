@@ -1,0 +1,394 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+
+* {
+    text-decoration: none;
+    box-sizing: border-box; 
+    margin: 0%;
+    padding: 0%;
+    
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+
+
+/* header_MENU */
+
+header{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 100%;
+    height: 120px;
+    gap: 10px;
+    position: sticky;
+}
+
+.menu_barra{
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content:center;
+    top:0;
+}
+
+nav{
+    font-size: 20px;
+    font-family: "EB Garamond", serif;
+    font-weight: 600;
+    width: 460px;
+    height: 30px;
+    margin-right: 50px;
+}
+
+#a {
+    display: flex;
+    column-gap: 10px;
+    padding: 8px;
+    transition-duration: background-color 5s;
+}
+
+/* header_Conteiner_Jesus */
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: red;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.logo_barra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+}
+
+.logo_barra img{
+    width:40px;
+    height:40px;
+}
+
+div.jesus{
+    justify-content: center;
+    align-items: center;
+}
+
+h5{
+    font-size: 48px;
+    font-family:"roboto", sans-serif;
+    color: #DDB53C;
+}
+
+/* transição do menu */
+
+nav#menu a {
+    color: #000000 ;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: white;
+    text-decoration: underline;
+    font-weight: 600;
+}
+#a :hover {
+    background-color: #ffbb01;
+}
+
+
+/* rodape */
+
+footer{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow:1px 5px 5px 2px rgba(5, 5, 5, 0.5);
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    font-family:"roboto", sans-serif;
+    background-color: #ffffff;
+    padding: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+    height: 100%;
+    margin-top: 2px;
+}
+
+   /* logo preto com copyright */
+
+.logo_geral{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: center;
+    width: 160px;
+    height: 80px;
+}
+
+#logo_rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+}
+
+#logo_rodape img{
+    width:50px;
+    height:50px;
+}
+
+#copy{ 
+    font-family:"roboto", sans-serif; 
+    font-size: 8px;
+}
+
+/* razão social */
+
+.razao{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-around;
+    width: 300px;
+    height: 80px;
+}
+
+h3{
+    font-family:"roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 530;
+}
+
+span{
+    font-family:"roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* conteiner pix e pix qrcode */
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-self:center;
+    width: 245px;
+    height: 80px;
+    gap: 5px;
+}
+
+/* pix por cnpj */
+
+.pix{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-between;
+    width: 150px;
+    height: 80px;
+}
+
+#icone_pix{
+    display: flex;
+    width:90px;
+    height:60px;
+}
+
+.pix p{
+    display: flex;
+    font-family:"roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 530;
+}
+
+/* pix por qr code */
+
+.pix_rodape{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    width: 90px;
+    height: 80px;
+}
+
+#code{
+    display: flex;
+    width:60px;
+    height:60px;
+}
+
+#doe{
+    display: flex;
+    font-family:"roboto", sans-serif;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+/* media query */
+
+@media screen and (max-width:600px){
+
+    .body{
+        height: 100%;
+    }
+
+    .menu_barra{
+        height: 100%;
+    }
+
+    nav{
+        width: 100%;
+        font-size: 8px;
+        height: 18px;
+        margin-right: 0px;
+    }
+    #menu{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 1%;
+    }
+
+    .barra{
+        height: 30px;
+        padding: 5px;
+    }
+
+    .logo_barra{
+        width: 22px;
+        height: 22px;
+    }
+
+    .logo_barra img{
+        width: 12px;
+        height: 12px;
+    }
+
+    h5{
+        font-size: 25px;
+    }
+    footer{
+        margin-top: 3px;
+    }
+
+    .rodape_footer{
+        height: 50px;
+    }
+    .rodape{
+        height: 50px;
+    }
+    
+    .logo_geral{
+        width: 100px;
+        height: 30px;
+    }
+
+    #logo_rodape{
+        width:22px;
+        height:22px;
+    }
+
+    #logo_rodape img{
+        width:12px;
+        height:12px;
+    }
+
+    .razao{
+        width: 110px;
+        height: 30px;
+ 
+    }
+
+    #copy{ 
+        font-size: 4px;
+    }
+
+
+   /* pix */
+
+    .container{
+        width: 120px;
+        height: 30px;
+    }
+    
+    .pix{
+        width: 65px;
+        height: 30px;
+    }
+    
+    #icone_pix{
+        display: flex;
+        width:40px;
+        height:20px;
+    }
+    
+    .pix p{
+        display: flex;
+        font-family:"roboto", sans-serif;
+        font-size: 5px;
+        font-weight: 530;
+    }
+
+    h3{
+        font-size: 5px;
+    }
+    
+    span{
+        font-size: 5px;
+    }
+    
+    
+    /* pix  code*/
+
+    .pix_rodape{
+
+        width: 35px;
+        height: 30px;
+    }
+
+    #code{
+        display: flex;
+        width:22px;
+        height:22px;
+    }
+
+    #doe{
+        display: flex;
+        font-family:"roboto", sans-serif;
+        font-size: 4px;
+        margin-top: 2px;
+    }
+
+}

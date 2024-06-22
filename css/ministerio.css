@@ -1,0 +1,281 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+
+* {
+    text-decoration: none;
+    box-sizing: border-box; 
+    margin: 0%;
+    padding: 0%;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body{ 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family:"roboto", sans-serif;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%; 
+    padding: 20px;
+}
+
+.interface{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:100%;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow:0px 0px 5px 2px rgba(5, 5, 5, 0.5);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-top: 10px;
+}
+
+.igreja{
+    position: relative;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow:0px 0px 5px 2px rgba(5, 5, 5, 0.5);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-top: 5px;
+    padding-top: 20px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: "EB Garamond", serif;
+    font-size: 35px;
+    gap: 10px;
+}
+
+h1.a1{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "EB Garamond", serif;
+    font-size: 30px;
+    margin: 40px;
+}
+
+h1.a3{
+    color:#774D0B;
+}
+
+span#a3_1{
+    margin-left: 10px;
+    color:#B38F21;
+}
+
+p.texto {
+    text-transform:initial;
+    text-indent: 20px;
+    font-weight: 400;
+    font-family: "roboto", serif;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.corpo_ijh{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    column-gap: 50px;
+    overflow: hidden;
+}
+
+.ijh{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    width: 400px;
+    height: auto;
+}
+
+.conteiner{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 408px;
+    height: 100%;
+    background-color: red;
+    border-radius: 5px;
+    box-shadow:0px 0px 5px 2px rgba(5, 5, 5, 0.5);
+    overflow: hidden;
+
+}
+
+.local{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: flex-start;
+    margin: 10px;
+    gap: 10px;
+}
+
+
+#imagem img{
+    width: 400px;
+    max-width: 100%;
+    height: 300px;
+    box-shadow:0px 0px 5px 2px rgba(5, 5, 5, 0.5);
+}
+
+.item{
+    opacity: 0%;
+    transition: opacity 2s;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+}
+/* transição */
+
+.item:hover{
+    opacity: 1;
+}
+
+/* ================= */
+
+
+#qual_ijh{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size:40px;
+    width: 400px;
+    height: 30px;
+    margin: 10px;
+    font-weight: 800;
+    color: #B38F21;
+    text-transform: uppercase;
+}
+
+#lider{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    font-size: 12x;
+    font-weight: 900;
+    width: 400px;
+    height: auto;
+}
+
+.local img{
+    width: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.local a{
+    color: black;
+    text-transform:uppercase;
+    font-size: 12px;
+}
+
+/* media query */
+
+@media screen and (max-width:500px){
+    .body{
+        width: 500px;height: 100%;
+    }
+    .igreja{
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+        scroll-snap-type: both mandatory;
+
+    
+    }
+    h1{
+        font-size: 20px;
+        gap: 0px;
+
+    }
+    h1.a1{
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+    }
+    p.texto{
+        font-size: 10px;
+        text-align: justify;
+        height: 50px;
+
+    }
+
+    .interface{
+        width: 100%;
+        height: 100%;
+        margin-top: 5px;
+
+    }
+
+    .corpo_ijh{
+        justify-content:center;
+        width: 100%;
+        height: 400px;
+        overflow: scroll;
+        scroll-snap-type: both mandatory;
+        gap: 10px;
+        margin-left: 5px;
+    }
+
+   
+    .conteiner{
+        width: 310px;
+        height: auto;
+    
+    }
+
+    #imagem img{
+        width: 300px;
+        height: 100%;
+
+    }
+
+    .item{
+        width: 330px;
+        height: 100%;
+
+    }
+
+    .local a{
+        font-size: 8px;
+    }
+
+
+
+}

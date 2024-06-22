@@ -1,0 +1,808 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+
+* {
+    text-decoration: none;
+    box-sizing: border-box; 
+    margin: 0%;
+    padding: 0%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* área total do corpo */
+
+body{ 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family:"roboto", sans-serif;
+    background-color: #ffffff;
+    margin: 20px;
+    margin-top: -20px;
+}
+
+/* área total do sub-corpo */
+
+.interface{
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow:0px 0px 5px 2px rgba(5, 5, 5, 0.5);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-top: 25px;
+}
+
+/* estrutura main a esquerda*/
+
+.corpo{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.eventos{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 99%;
+    background: url(../imagens/sepulcro.jpg) no-repeat;
+}
+
+.semana{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 400px;
+    margin-left: 5%;
+
+}
+
+.mes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 400px;
+    margin-left: 5%;
+
+}
+
+hgroup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#774D0B;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: "EB Garamond", serif;
+    font-size: 30px;
+    margin: 20px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #774D0B;
+}
+
+h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #886d1a;
+    font-family: "EB Garamond", serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 35px;
+    padding-left: 10px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #886d1a;
+}
+
+#img_semana{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 300px;
+    background-color: #ffffff;
+    box-shadow:0px 0px 5px 2px rgba(5, 5, 5, 0.5);
+    border:1px transparent black;
+    border-radius: 5px;
+}
+
+#img_semana img{
+    width: 90%;
+    height: 100%;
+}
+
+#img_mes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 300px;
+    background-color: #ffffff;
+    box-shadow:0px 0px 5px 2px rgba(5, 5, 5, 0.5);
+    border:1px transparent black;
+    border-radius: 5px;
+}
+#img_mes img{
+    width: 90%;
+    height: 100%;
+}
+
+/* audio e descrição de quem */
+
+.audio{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+h2{
+    display: flex;
+    font-family:"roboto", sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #DDB53C;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #DDB53C;
+}
+
+#ouca{
+    font-family:"roboto", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-left: 0px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
+}
+
+.dados{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.img_audio{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+#play{
+    display: flex;
+    width: 200px;
+    height: 50px;
+
+}
+
+.quem{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    font-family: "roboto", serif;
+    font-size: 15px;
+    font-weight: 800;
+    margin-left: 80px;
+}
+
+#mais{
+    display: flex;
+    font-family:"roboto", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-left: 10px;
+    border-radius: 2px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000000;
+}
+
+#mais a{
+    color: #000000;
+}
+
+/* divisão entre os corpos */
+
+.divisao{
+    display: flex;
+    width: 1%;
+    height: 100%;
+    border-right: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+/* estrutura aside a direita */
+
+aside.lateral{
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    height: 100%;
+    padding-top: 30px;
+}
+
+.direita{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* titulo */
+
+.deus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.deus h2#deus{
+    display: flex;
+    font-family:"roboto", sans-serif;
+    font-size: 20px;
+    color: #000000;
+    margin-top: -10px;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: #000000;
+}
+
+/* barras dos destaques */
+
+.irmas{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin-top: 20px;
+    margin-right: 10px;
+    box-shadow:1px 1px 5px 2px rgba(5, 5, 5, 0.5); 
+}
+
+.irmas_a{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: red;
+}
+
+.jovens{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    box-shadow:1px 1px 5px 2px rgba(5, 5, 5, 0.5);  
+    margin-top: 10px;   
+    margin-right: 10px;
+}
+
+.jovens_a{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: red;
+}
+
+.criancas{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    box-shadow:1px 1px 5px 2px rgba(5, 5, 5, 0.5);  
+    margin-top: 10px;  
+    margin-right: 10px;
+}
+
+.criancas_a{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: red;
+}
+
+.oracao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    box-shadow:1px 1px 5px 2px rgba(5, 5, 5, 0.5);  
+    margin-top: 10px;
+    margin-right: 10px;
+
+}
+
+.oracao_a{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: red;
+}
+
+
+/* descrição dentros dos topicos_ barras */
+
+/* circulo de oração - jovens - criaças - oração */
+
+.irmas_b{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+    gap: 30px;
+}
+
+.irmas_c{
+    width: 200px;
+    height: 120px;
+    background-color:pink;
+    border-radius: 20px;
+    border: solid rgb(109, 108, 108);
+}
+
+.irmas_c img{
+    width: 100%;
+    height: auto;
+}
+
+
+.jovens_b{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    padding: 5px;
+}
+
+.jovens_c{
+    width: 200px;
+    height: 130px;
+    background-image: linear-gradient(180deg,#ffffff,#ffffff,rgba(0, 0, 0, 0.5));
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 25px;
+    border: solid 1px rgba(0, 0, 0, 0.5);
+}
+
+.jovens_c img{
+    width: 100%;
+    height: 100%;
+}
+
+.juntar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    gap: 120px;
+    padding: 5px;
+}
+
+.criancas_b{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.criancas_c{
+    width: 200px;
+    height: 130px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+
+}
+
+.criancas_c img{
+    width: 100%;
+    height: auto;
+}
+
+.oracao_b{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+}
+
+ /* papiros com pedidos de oração */
+
+.bloco {
+    display: block;
+    position: relative;
+    width: 49%;
+    height: 180px;
+  }
+  
+.bloco img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+#texto {
+    position: absolute;
+    margin: 12%;
+    margin-top: 15%;
+  }
+
+.bloco2 {
+    display: inline-block;
+    position: relative;
+    width: 49%;
+    height: 180px;
+  }
+  
+.bloco2 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+#texto2 {
+    position: absolute;
+    margin: 12%;
+    margin-top: 15%;
+
+  }
+
+#t1{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+#t2{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* botão para realização de formulario de oração */
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    background-color: #f1d686;
+    border: transparent;
+    margin: 10px;
+}
+
+h3#papiro{
+    color: #000000;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+
+/* fontes para padrão para destaques */
+
+h3#barras{
+    font-size: 20px;
+    font-weight: 600;
+    font-family:"roboto", sans-serif;
+    color: #DDB53C;
+    margin-left: 20px;
+}
+
+h3#dia{
+    font-size: 20px;
+    font-family:"roboto", sans-serif;
+    color: black;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 10%;
+}
+
+p#tma{
+    font-size: 13px;
+    font-family: roboto, serif;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+span#tme{
+    font-size: 11px;
+    font-family:"roboto", sans-serif;
+    color: black;
+    font-weight: 500;
+}
+
+p#tm{
+    font-size: 11px;
+    font-family:"roboto", sans-serif;
+    color: black;
+    font-weight: 500;
+}
+
+span#tmaior{
+    font-size: 11px;
+    font-family:"roboto", sans-serif;
+    color: black;
+    font-weight: 600;
+}
+
+@media screen and (max-width:600px){
+
+    body{
+        margin: 1%;
+        margin-top: -1%;
+    }
+
+    .interface{
+        display: flex;
+        width: 100%;
+    }
+    
+    .corpo{
+        flex-flow: column;
+        width: 100%;
+    }
+
+    /* ############################### */
+
+    .eventos{
+        width: 98%;
+        height: 99%;
+    }
+
+    hgroup{
+        font-size: 19px;
+        margin: 10px;
+    }
+    
+    h4{
+        font-size: 22px;
+    }
+    
+    h2{
+        font-size: 18px;
+    }
+    
+    #ouca{
+        font-size: 18px;
+    }
+    
+    .quem{
+        font-size: 10px;
+        margin-left: 20px;
+    }
+    
+    #mais{
+        font-size: 8px;
+    }
+    
+    .semana{
+        width: 100%;
+        height: 250px;
+        padding-left:8%;
+        padding-right:8%;
+
+    }
+    
+    .mes{
+        width: 100%;
+        height: 250px;
+        padding-left:8% ;
+        padding-right:8% ;
+
+    }
+    
+    #img_semana{
+        width: 90%;
+        height: 200px;
+    }
+    
+    #img_semana img{
+        width: 90%;
+        height: 100%;
+    }
+    
+    #img_mes{
+        width: 90%;
+        height: 200px;
+    }
+    #img_mes img{
+        width: 90%;
+        height: 100%;
+    }
+
+
+    #play{
+        display: flex;
+        width: 180px;
+        height: 50px;
+    
+    }
+
+    .img_audio{
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* ############################### */
+
+    .divisao{
+        display: none;
+    }
+
+    /* ############################### */
+
+    aside.lateral{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    .deus h2#deus{
+        font-size: 16px;
+    }
+
+    .irmas_b{
+        gap: 0px;
+        padding: 6px;
+    }
+    
+    .jovens_b{
+        gap: 0px;
+        padding: 6px;
+
+    }
+    .juntar{
+        gap: 5px;
+        padding: 5px;
+    }
+    
+    .irmas_c{
+        width: 180px;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .irmas_c img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .jovens_c{
+        width: 180px;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .jovens_c img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .criancas{
+        width: 100%;
+        height: 200px;
+        justify-content: space-between;
+    }
+    
+    .criancas_c{
+        width: 180px;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+
+    }
+    
+    .criancas_c img{
+        width: 100%;
+        height: auto;
+    }
+
+     /* papiros com pedidos de oração */
+
+     .oracao_b{
+        height: 150px;
+    }
+    
+    .bloco {
+        display: block;
+        position: relative;
+        width: 290px;
+        height: 150px;
+        margin-left: 10%;
+    }
+    
+    .bloco img {
+        position: absolute;
+        width: 280px;
+        height: 100%;
+    }
+    
+    #texto {
+        position: absolute;
+        margin: 12%;
+        margin-top: 15%;
+    }
+
+    .bloco2 {
+        display: none
+    }
+    
+    .bloco2 img {
+    display: none;
+    }
+
+    /* fontes para padrão para destaques */
+
+    h3#barras{
+        font-size: 16px;
+        font-weight: 600;
+        font-family:"roboto", sans-serif;
+        color: #DDB53C;
+        margin-left: 5px;
+    }
+
+    h3#dia{
+        font-size: 16px;
+        font-family:"roboto", sans-serif;
+        color: black;
+        font-weight: 600;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: 10%;
+    }
+
+    p#tma{
+        font-size: 12px;
+        font-family: roboto, serif;
+        color: black;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    span#tme{
+        font-size: 11px;
+        font-family:"roboto", sans-serif;
+        color: black;
+        font-weight: 500;
+    }
+
+    p#tm{
+        font-size: 8px;
+        font-family:"roboto", sans-serif;
+        color: black;
+        font-weight: 500;
+    }
+
+    span#tmaior{
+        font-size: 10px;
+        font-family:"roboto", sans-serif;
+        color: black;
+        font-weight: 600;
+    }
+
+}

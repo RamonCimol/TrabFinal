@@ -1,0 +1,496 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+
+* {
+    text-decoration: none;
+    box-sizing: border-box; 
+    margin: 0%;
+    padding: 0%;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* estrutura main */
+
+body{ 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family:"roboto", sans-serif;
+    background-color: #ffffff;
+    width: 100%;  
+    height: 100%; 
+    padding: 20px;
+    margin-top: -20px;
+}
+
+.interface4{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.corpo4{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+
+/* ajuste padrão de fontes */
+
+.h_p1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+    font-family:"roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform:initial;
+    text-align: center;
+}
+
+.h_p2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+    font-family:"roboto", sans-serif;
+    font-weight: 550;
+    font-size: 21px;
+    text-transform:initial;
+    text-align: center;
+}
+
+/* ############################################################# */
+/* area it41 */
+
+.it41{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 30%;
+    height: 1280px;
+}
+
+.figure1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+    height: 120px;
+    gap: 30px;
+}
+
+.figure1 img{
+    width: 300px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+/* titulo it41 */
+
+hgroup.tit_a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+}
+
+hgroup.tit_a h1{
+    font-family: "EB Garamond", serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform:uppercase;
+    
+}
+
+hgroup.tit_a h2#sub_a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: "EB Garamond", serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-transform:uppercase;
+}
+
+/* paragrafo it41 ajuste*/
+
+.h_p1 #p1{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-indent: 20px;
+}
+
+.h_p1 #p3{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-indent: 20px;
+}
+
+.h_p1 #sub_a{
+    width: 100%;
+    font-weight: 400;
+    font-size: 25px;
+    font-family:"roboto", sans-serif;
+    text-transform:initial;
+}
+
+/* ############################################################# */
+/* area t42 */
+/* titulo it42 */
+
+.it42{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+}
+
+hgroup#h_p2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+    color:#774D0B;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: "EB Garamond", serif;
+    font-size: 40px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #774D0B;
+}
+
+h4{
+    color: #886d1a;
+    font-family: "EB Garamond", serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 50px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #886d1a;
+}
+
+/* paragrafo it42 ajuste*/
+
+.h_p2 #p2{
+    text-indent: 20px;
+}
+
+/* ajuste do botão */
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    background-color: #05FF05;
+    border: transparent;
+    margin-top: 50px;
+}
+
+button#estudo_aula{
+    font-size: 18px;
+
+}
+
+button#estudo_aula a{
+    color: #000;
+    font-weight: 540;
+}
+
+/* ############################################################# */
+/* area it43 */
+
+.it43{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 30%;
+    gap: 440px;
+}
+
+.figure2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+    gap: 20px;
+}
+
+.figure2 img{
+    width: 300px;
+    height: 130px;
+    border-radius: 10px;
+}
+
+/* titulo it43 */
+
+hgroup.tit_b{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+    height: 70px;
+}
+
+hgroup.tit_b h1{
+    font-family:"EB Garamond", serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform:uppercase;
+}
+
+hgroup.tit_b #sub_b{
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-transform:uppercase;
+}
+
+/* ################################################# */
+/* ajuda */
+
+.obra{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+}
+
+/* titulo segunda parte  it43 */
+
+hgroup.tit_c{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+}
+
+hgroup.tit_c #titulo_c{
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-transform:uppercase;
+}
+
+hgroup.tit_c #sub_c{
+    font-family: "EB Garamond", serif;
+    font-weight: 700;
+    font-size: 30px;
+    width: 140px;
+    text-transform:uppercase;
+}
+
+.figure3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+    height: 120px;
+    margin-bottom: 40px;
+}
+
+.figure3 img{
+    width: 100px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+#pix_t{
+    color: #40C9B1;
+}
+
+#tdm_t{
+    color: #DDB53C;
+}
+
+
+@media screen and (max-width:1125px){
+
+    /* estrutura main**************************************/
+
+    .interface{
+        width: 100%;
+        height: 100%;
+    }
+
+    .corpo4{
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column;
+    }
+
+    #p1{
+        font-size: 14px;
+    }
+
+    /* ############################################################# */
+    /* area it41 */
+
+    .it41{
+        display: none;
+    }
+
+
+    /* ############################################################# */
+    /* area t42 */
+    /* titulo it42 */
+
+    .it42{
+        width: 100%;
+    }
+
+    hgroup#h_p2{
+        width: 200px;
+        height: 80px;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .h_p2 #p2{
+        font-size: 14px;
+    }
+    
+
+    h4{
+        font-size: 35px;
+    }
+
+    /* ajuste do botão */
+
+    button{
+        width: 300px;
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    button#estudo_aula{
+        font-size: 10px;
+    }
+
+    /* ############################################################# */
+    /* area it43 */
+
+    .it43{
+        width: 100%;
+        gap: 320px;
+    }
+
+    .figure2{
+        width: 300px;
+        height: 130px;
+        gap: 10px;
+    }
+
+    .figure2 img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    /* titulo it43 */
+
+    hgroup.tit_b{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 200px;
+        height: 50px;
+    }
+
+    hgroup.tit_b h1{
+        font-family:"EB Garamond", serif;
+        font-weight: 700;
+        font-size: 20px;
+        text-transform:uppercase;
+    }
+
+    hgroup.tit_b #sub_b{
+        font-family: "EB Garamond", serif;
+        font-weight: 400;
+        font-size: 18px;
+        text-transform:uppercase;
+    }
+
+    /* ################################################# */
+    /* ajuda */
+
+    .obra{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        height: 200px;
+    }
+
+    /* titulo segunda parte  it43 */
+
+    hgroup.tit_c{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 200px;
+        height: 50px;
+    }
+
+    hgroup.tit_c #titulo_c{
+        font-family: "EB Garamond", serif;
+        font-weight: 400;
+        font-size: 18px;
+        text-transform:uppercase;
+    }
+
+    hgroup.tit_c #sub_c{
+        font-family: "EB Garamond", serif;
+        font-weight: 700;
+        font-size: 20px;
+        width: 140px;
+        text-transform:uppercase;
+    }
+
+    .h_p1 #p3{
+       display: none;
+    }
+
+    .figure3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 120px;
+        height: 100px;
+    }
+
+    .figure3 img{
+        width: 120px;
+        height: 120px;
+        border-radius: 10px;
+    }
+
+}
